@@ -1,0 +1,161 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+}
+
+header {
+  background-color: #e6e6fa; /* Lavender */
+  color: #333;
+  padding: 20px 0;
+  text-align: center;
+  position: sticky; /* Keeps the header fixed */
+  top: 0; /* Stay at the top */
+  z-index: 1000; /* Above other content */
+}
+
+.logo {
+  font-size: 2.5em;
+  font-family: "Georgia", serif;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #e91e63; /* Change color on hover */
+}
+
+/* Adventures Page Styles */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align items to the start */
+  flex-direction: column;
+  padding: 20px; /* Padding for main content */
+}
+
+.adventures-heading {
+  text-align: center; /* Center align the heading */
+  font-family: "Georgia", serif; /* Beautiful font */
+  font-size: 2.5em; /* Larger size for prominence */
+  color: #9b59b6; /* Off purple color */
+  margin-bottom: 20px; /* Space below the heading */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+}
+
+.adventures {
+  display: flex; /* Use flexbox for layout */
+  flex-wrap: wrap; /* Allow items to wrap */
+  justify-content: space-between; /* Space between items */
+}
+
+.adventure {
+  flex: 1 1 300px; /* Base width of 300px, can grow/shrink */
+  max-width: 400px; /* Maximum width for each adventure */
+  margin: 15px; /* Margin between adventure cards */
+  padding: 20px;
+  background-color: #ffffff; /* White background for contrast */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.3s; /* Transition for hover effect */
+  overflow: hidden;
+}
+
+.adventure:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.adventure h3 {
+  font-size: 1.5em; /* Slightly smaller title */
+  color: #9b59b6; /* Off purple */
+}
+
+.adventure p {
+  font-size: 1em; /* Standard size for description */
+  color: #666; /* Darker color for contrast */
+}
+
+.video {
+  margin: 20px 0; /* Space above and below video */
+}
+.adventure video {
+  width: 100%; /* Fits the width of the parent container */
+  height: auto; /* Maintains the aspect ratio */
+  max-height: 300px; /* Optional: Restrict max height */
+  display: block; /* Removes inline element spacing */
+  margin: 10px 0; /* Adds space around the video */
+}
+#myaudio{
+  max-width:100%;
+}
+/* Footer Styles */
+footer {
+  background-color: #e6e6fa; /* Lavender */
+  color: #333;
+  text-align: center;
+  padding: 20px 0; /* Increased padding for better spacing */
+  margin-top: 50px; /* Moves the footer down */
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+.social-icons {
+  list-style-type: none;
+  padding: 1rem;
+}
+
+.icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.icon:hover {
+  transform: scale(1.2); /* Slight zoom effect */
+  filter: brightness(1.3); /* Slightly brighten the image on hover */
+}
+
+.social-icons li {
+  display: inline;
+  margin: 0 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .adventure {
+    flex: 1 1 calc(45% - 20px); /* Adjust for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  header,
+  footer {
+    padding: 15px 0;
+  }
+
+  .adventure {
+    flex: 1 1 100%; /* Full width on small devices */
+  }
+}

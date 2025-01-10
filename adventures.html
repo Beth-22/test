@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventures - Beth's Personal Website</title>
+    <link rel="stylesheet" href="styles/adventurecss.css">
+</head>
+<body>
+    <header>
+        <h1 class="logo">Beth</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="adventures.html">Adventures</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 class="adventures-heading">My Adventures</h2>
+        <div class="adventures">
+            <div class="adventure adventure-large">
+                <h3>Collaborating on Full-Stack Projects</h3>
+                <p>Handling the frontend, designing sleek user interfaces, while also working on setting up the server, handling data storage, and creating APIs that fetch and send data to the frontend.</p>
+                <video id="myVideo" controls>
+                    <source src="images/7989671-hd_1920_1080_25fps.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                
+                <!-- Actionable Button with Play/Pause functionality using HTML5 -->
+                <button onclick="document.getElementById('myVideo').paused ? document.getElementById('myVideo').play() : document.getElementById('myVideo').pause()">Watch video</button>
+                
+            </div>
+            <div class="adventure adventure-medium">
+                <h3>The Tea Farm adventures</h3>
+                <p>My process of learning everything about tea—how to harvest, process, and blend leaves to perfection. A thrilling journey of staying connected to the ground and not be captive to the blue light from our screens. </p>
+                <video id="myVideo2" controls>
+                    <source src="images/17973477-sd_640_360_30fps.mp4 " type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                
+                <!-- Actionable Button with Play/Pause functionality using HTML5 -->
+                <button onclick="document.getElementById('myVideo2').paused ? document.getElementById('myVideo2').play() : document.getElementById('myVideo2').pause()">Watch video</button>
+                
+            </div>
+            <div class="adventure adventure-small">
+                <h3>Solving the Cicada 3301</h3>
+                <p>What initially began in 2012 and involved a series of cryptographic, steganographic, and puzzle-solving tasks. Even though the puzzles stopped after 2014, they left behind a fascinating legacy and a wonderful adventure.</p>
+                <audio id="myaudio" controls>
+                    <source src="images/mixkit-serene-view-443.mp3" type="audio/mpeg">
+                    Your browser does not support the audio tag.
+                </audio>
+                <button onclick="document.getElementById('myaudio').paused ? document.getElementById('myaudio').play() : document.getElementById('myaudio').pause()"> Listen</button>
+            </div>
+            <div class="adventure adventure-large">
+                <h3>The Search for the Phantom Bug </h3>
+                <p>One fateful day, I stumbled upon a phantom bug that would only appear after a series of complex user inputs. Armed with only a console log and my trusty debugger, I ventured deep into the codebase. After hours of sleuthing, I discovered that a tiny off-by-one error in an index was causing the glitch. The satisfaction of solving the mystery? Priceless.</p>
+            </div>
+            <div class="adventure adventure-large">
+                <h3>The Great Memory Leak Expedition</h3>
+                <p>On one of my most challenging adventures, I embarked on a quest to track down a memory leak that had been plaguing a high-traffic web app. At first, the issue was elusive—no crashes. Fixing it freed up memory and restored the app’s performance, turning a potential disaster into a triumph.</p>
+            </div>
+            <div class="adventure adventure-medium">
+                <h3>The Coding Olympiad</h3>
+                <p>As I advanced in competitive programming, I tackled more advanced topics like dynamic programming, segment trees, and binary search. One of the most thrilling challenges I faced was during a simulated olympiad, where I had to solve problems in multiple domains, each with varying difficulty. Competitive programming taught me to stay calm under pressure and consistently optimize my approach.
+                    </p>
+            </div>
+            
+        </div>
+    </main>
+    <footer>
+        <p>Connect with me:</p>
+        <ul class="social-icons">
+            <li><a href="https://github.com/Beth-22">
+                <img src="images/github-64.webp" alt="GitHub Icon" title="GitHub" class="icon">
+            </a></li>
+            <li><a href="https://www.linkedin.com/in/bethlehem-woldekidan-08376333a/">
+                <img src="images/LogosLinkedin.png" alt="LinkedIn Icon" title="LinkedIn" class="icon">
+            </a></li>
+            <li><a href="https://www.linkedin.com/in/bethlehem-woldekidan-08376333a/">
+                <img src="images/twitter_bird_social_media_trending-64.webp" alt="Twitter Icon" title="Twitter" class="icon">
+            </a></li>
+        </ul>
+        <p>© 2024 Beth. All rights reserved.</p>
+    </footer>
+</body>
+</html>
